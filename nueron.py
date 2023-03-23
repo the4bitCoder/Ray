@@ -22,13 +22,14 @@ class nuerons_intputs_and_weights:
         self.layer_num = layer_num
         self.layer_length = len(network_inputs) / layer_num # this feature isn't fully reliable as all the layer have the same number of nuerons
     
-    def node_stuff(self,node,): 
+    def node_inputs(self,node): 
         returnarray = []
         layer_inhabiting = node // self.layer_length
         layer_before = layer_inhabiting - 1
         for i in range(0,self.layer_length):
             returnarray[i] = layer_before + 1
         return returnarray
+# Hasn't been completed yet
     
 class AI_learn:
     def __init__(self,result,ouput,network_weights):
@@ -39,4 +40,15 @@ class AI_learn:
     def learn(self):
         print("This isn't working yet")
 
-# main AI (you can create your own bellow)      
+# main AI (you can create your own bellow) 
+# For example     
+memory = nuerons_intputs_and_weights([],[],0)
+node_array = []
+
+for i in range(0,memory.layer_length*memory.layer_num):
+    node_array.append(nueron(memory.node_weigths,memory.node_inputs))
+
+for i in range(0,len(node_array)):
+    memory.modify_in(i) = node_array[i].run()
+
+print(memory.node_inputs[len(memory.node_inputs)])
