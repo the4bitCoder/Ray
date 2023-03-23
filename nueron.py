@@ -20,9 +20,9 @@ class nuerons_intputs_and_weights:
         self.network_weigths = network_weigths
         self.network_inputs = network_inputs
         self.layer_num = layer_num
-        self.layer_length = len(network_inputs) / layer_num
+        self.layer_length = len(network_inputs) / layer_num # this feature isn't fully reliable as all the layer have the same number of nuerons
     
-    def node_stuff(self,node,):
+    def node_stuff(self,node,): 
         returnarray = []
         layer_inhabiting = node // self.layer_length
         layer_before = layer_inhabiting - 1
@@ -37,9 +37,6 @@ class AI_learn:
         self.network_weigths = network_weights
       
     def learn(self):
-        
-            
+        print("This isn't working yet")
 
-            
-            
-
+# main AI (you can create your own bellow)      
