@@ -37,6 +37,9 @@ class nuerons_intputs_and_weights:
         for i in range(node_place-self.layer_length-1,node_place):
             returnarray[i] = self.network_weigths[i]
         return returnarray
+
+    def modify_node_inputs(sel,i,node_output):
+        self.network_inputs[i] = node_output
     
 class AI_learn:
     def __init__(self,result,ouput,network_weights):
@@ -46,6 +49,7 @@ class AI_learn:
       
     def learn(self):
         print("This isn't working yet")
+        # COMING SOON
 
 # main AI (you can create your own bellow) 
 # For example     
@@ -56,6 +60,6 @@ for i in range(0,memory.layer_length*memory.layer_num):
     node_array.append(nueron(memory.node_weigths(i),memory.node_inputs(i)))
 
 for i in range(0,len(node_array)):
-    memory.modify_in(i) = node_array[i]
+    memory.modify_node_inputs(i,node_array[i])
 
 print(memory.node_inputs[len(memory.node_inputs)])
