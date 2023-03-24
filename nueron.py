@@ -30,7 +30,7 @@ class nuerons_intputs_and_weights:
             returnarray[i] = layer_before + 1
         return returnarray
     
-    def node_weights(self,node):
+    def node_weigths(self,node):
         returnarray = []
         node_place = len(self.network_weigths) / len(self.layer_length*self.layer_num)
         node_place = node_place*node
