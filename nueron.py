@@ -20,7 +20,7 @@ class nuerons_intputs_and_weights:
         self.network_weigths = network_weigths
         self.network_inputs = network_inputs
         self.layer_num = layer_num
-        self.layer_length = len(network_inputs) / layer_num # this feature isn't fully reliable as all the layer have the same number of nuerons
+        self.layer_length = len(network_inputs) / layer_num # modify this
     
     def node_inputs(self,node): 
         returnarray = []
@@ -53,7 +53,7 @@ class AI_learn:
 
 # main AI (you can create your own bellow) 
 # For example     
-memory = nuerons_intputs_and_weights([],[],0)
+'''memory = nuerons_intputs_and_weights([],[],0)
 node_array = []
 
 for i in range(0,memory.layer_length*memory.layer_num):
@@ -62,4 +62,4 @@ for i in range(0,memory.layer_length*memory.layer_num):
 for i in range(0,len(node_array)):
     memory.modify_node_inputs(i,node_array[i])
 
-print(memory.node_inputs[len(memory.node_inputs)])
+print(memory.node_inputs[len(memory.node_inputs)])'''
