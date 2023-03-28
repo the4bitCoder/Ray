@@ -62,4 +62,5 @@ for i in range(0,memory.layer_length*memory.layer_num):
 for i in range(0,len(node_array)):
     memory.modify_node_inputs(i,node_array[i])
 
-print(memory.node_inputs[len(memory.node_inputs)])'''
+for i in range(len(memory.node_inputs)-memory.layer_length-1,len(memory.node_inputs)):
+	print(memory.node_inputs[i])'''
