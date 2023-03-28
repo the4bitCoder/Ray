@@ -57,10 +57,9 @@ class AI_learn:
 node_array = []
 
 for i in range(0,memory.layer_length*memory.layer_num):
+    for i in range(0,len(node_array)):
+        memory.modify_node_inputs(i,node_array[i])
     node_array.append(nueron(memory.node_weigths(i),memory.node_inputs(i)))
-
-for i in range(0,len(node_array)):
-    memory.modify_node_inputs(i,node_array[i])
 
 for i in range(len(memory.node_inputs)-memory.layer_length-1,len(memory.node_inputs)):
 	print(memory.node_inputs[i])'''
