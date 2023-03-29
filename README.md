@@ -1,5 +1,5 @@
 # Ray
-My second AI attempt using an obejct oriented approach.
+My second AI attempt using an object oriented approach.
 An Example of the AI configuration is bellow :
 
 ```
