@@ -1,6 +1,6 @@
 # Ray
 My second AI attempt using an object oriented approach.
-An Example of the AI configuration is bellow :
+An example of the AI configuration is below :
 
 ```
 memory = nuerons_intputs_and_weights([],[],0)
